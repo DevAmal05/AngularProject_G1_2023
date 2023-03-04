@@ -5,10 +5,18 @@ import { Page404Component } from './page404/page404.component';
 import { TestComponent } from './test/test.component';
 
 const routes: Routes = [
-  
+  {path:'home',component:HomeComponent},
   {path:'',component:TestComponent},
-  {path:'**',component:Page404Component},
-  {path:'home',component:HomeComponent}
+
+
+
+
+
+
+
+  
+  
+  {path:'**',component:Page404Component}
 ];
 
 @NgModule({
