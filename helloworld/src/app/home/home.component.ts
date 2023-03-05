@@ -8,18 +8,27 @@ import { Component } from '@angular/core';
 export class HomeComponent {
 
 
+
+
+  msg:any;
+
+  nameList = ['Ahmed','Ali','Imen'];
+
   title! : String;
 
   title1 = "Groupe1";
 
-  number=25;
+  num = 25;
 
-  condition=true;
+test = false;
+  cond! : boolean
 
-  name : any;
+  name = "Imen";
 
 
   Status = "activee";
+
+
 
   getStatus(){
     return this.Status ;

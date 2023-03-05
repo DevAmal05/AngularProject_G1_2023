@@ -1,4 +1,8 @@
-<h1>WELCOME HOME</h1>
+<div *ngIf="test">
+    <h1>WELCOME HOME</h1>
+
+</div>
+
 
 
 <button class="test" routerLink="/test">Test</button>
@@ -6,8 +10,22 @@
 
 <h3>Welcome {{title1}}</h3>
 
-<p>{{number}}</p>
+<p>{{num}}</p>
 
 <h2>{{getStatus()}}</h2>
 
 <button (click)="save()">Save</button>
+
+<ul *ngFor="let n of nameList ">
+   <li> {{n}}</li>
+</ul>
+
+<input type="text" class="form-control" [(ngModel)]="msg"><b class="text-danger">{{msg}}</b>
+
+<div [ngSwitch]="name">
+
+    <div *ngSwitchCase="'Ali'">Welcome Ali</div>
+    <div *ngSwitchCase="'Imen'">Welcome Imen</div>
+    <div *ngSwitchCase="'Ahmed'">Welcome Ahmed</div>
+
+</div>
