@@ -28,6 +28,8 @@ test = false;
 
   Status = "activee";
 
+  date = new Date();
+
 
 
   getStatus(){
